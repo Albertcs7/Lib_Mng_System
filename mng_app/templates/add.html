@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+{% block content %}
+<body>
+    <h1 style="text-align: center;">LIBRARY MANAGEMENT SYSTEM</h1><br><br>
+    <div class="container" style="text-align: center;">
+        <form method="POST" action="">
+            {% csrf_token %}
+            Name of the book: <br>
+            <input type="text" id="bname" name="bname"><br><br>
+            Author: <br>
+            <input type="text" id="aname" name="aname"><br><br>
+            Category: <br>
+            <input type="text" id="cat" name="cat"><br><br>
+            Shelf number: <br>
+            <input type="text" id="sno" name="sno"><br><br>
+            <button type="submit" >Enter</button>
+        </form>
+    </div>
+</body>
+{% endblock %}
